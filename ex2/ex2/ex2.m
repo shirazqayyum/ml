@@ -38,11 +38,15 @@ plotData(X, y);
 % Put some labels 
 hold on;
 % Labels and Legend
-xlabel('Exam 1 score')
-ylabel('Exam 2 score')
+%xlabel('Exam 1 score')
+%ylabel('Exam 2 score')
 
+xlabel('x1')
+ylabel('x2')
 % Specified in plot order
-legend('Admitted', 'Not admitted')
+%legend('Admitted', 'Not admitted')
+
+legend('Closer', 'Away')
 hold off;
 
 fprintf('\nProgram paused. Press enter to continue.\n');
@@ -97,11 +101,17 @@ plotDecisionBoundary(theta, X, y);
 % Put some labels 
 hold on;
 % Labels and Legend
-xlabel('Exam 1 score')
-ylabel('Exam 2 score')
+%xlabel('Exam 1 score')
+%ylabel('Exam 2 score')
+
+xlabel('x1')
+ylabel('x2')
+
 
 % Specified in plot order
-legend('Admitted', 'Not admitted')
+%legend('Admitted', 'Not admitted')
+legend('Closer', 'Away')
+
 hold off;
 
 fprintf('\nProgram paused. Press enter to continue.\n');
