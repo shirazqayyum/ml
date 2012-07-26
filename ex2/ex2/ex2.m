@@ -24,7 +24,7 @@ clear ; close all; clc
 %  contains the label.
 
 data = load('ex2data1.txt');
-X = data(:, [1, 2]); y = data(:, 3);
+X = data(:, 1 ); y = data(:, 2);
 
 %% ==================== Part 1: Plotting ====================
 %  We start the exercise by first plotting the data to understand the 
@@ -41,12 +41,12 @@ hold on;
 %xlabel('Exam 1 score')
 %ylabel('Exam 2 score')
 
-xlabel('x1')
-ylabel('x2')
+%xlabel('x1')
+%ylabel('x2')
 % Specified in plot order
 %legend('Admitted', 'Not admitted')
 
-legend('Closer', 'Away')
+%legend('Closer', 'Away')
 hold off;
 
 fprintf('\nProgram paused. Press enter to continue.\n');
@@ -96,7 +96,7 @@ fprintf('theta: \n');
 fprintf(' %f \n', theta);
 
 % Plot Boundary
-plotDecisionBoundary(theta, X, y);
+%plotDecisionBoundary(theta, X, y);
 
 % Put some labels 
 hold on;
@@ -104,13 +104,13 @@ hold on;
 %xlabel('Exam 1 score')
 %ylabel('Exam 2 score')
 
-xlabel('x1')
-ylabel('x2')
+%xlabel('x1')
+%ylabel('x2')
 
 
 % Specified in plot order
 %legend('Admitted', 'Not admitted')
-legend('Closer', 'Away')
+%legend('Closer', 'Away')
 
 hold off;
 
@@ -131,9 +131,9 @@ pause;
 %  Predict probability for a student with score 45 on exam 1 
 %  and score 85 on exam 2 
 
-prob = sigmoid([1 45 85] * theta);
-fprintf(['For a student with scores 45 and 85, we predict an admission ' ...
-         'probability of %f\n\n'], prob);
+%prob = sigmoid([1 45 85] * theta);
+%fprintf(['For a student with scores 45 and 85, we predict an admission ' ...
+%         'probability of %f\n\n'], prob);
 
 % Compute accuracy on our training set
 p = predict(theta, X);
